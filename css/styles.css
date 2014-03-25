@@ -1,0 +1,41 @@
+/**
+ * Top Side bar
+ * ----------------------------------------------------------------------------
+ */
+
+.container {width: 1170px; font: 1em/normal '微软雅黑', '宋体', Arial, Helvetica, sans-serif;}
+.nav-sidebar {border: 1px solid aliceblue; border-bottom: none;}
+.nav-sidebar > li > a {color: #333; }
+/*.nav-sidebar > .active > a, .nav-sidebar > li > a:hover {background-color: cadetblue; color: #fff; }*/
+.nav-sidebar > .active > a, .nav-sidebar > li > a:hover {background-color: #A52A2A; color: #fff; }
+
+/**
+ * Jumbotron
+ * ----------------------------------------------------------------------------
+ */
+
+.container .jumbotron {padding: 16px 0; background: url('../img/bg.png'); margin-top: 70px; color: black;}
+.jumbotron p.des {font-size: 14px; text-align: center; padding-top: 6px; margin: 0 0 0 10px; }
+.logo {padding: 3px; display: block; }
+.brand {margin: 6px auto; display: block; }
+.status {padding-top: 50px; margin-left: -15px; }
+.status > ul {padding: 5px 0; }
+.status > ul > li {padding-right: 50px; }
+
+.main {border-left: solid 1px #ccc; }
+
+/**
+ * Form
+ * ----------------------------------------------------------------------------
+ */
+
+.form {overflow: hidden; }
+.form-small .form-group {margin-bottom: 9px; }
+.input-small {height: 30px; }
+.form-small label {font-weight: normal;}
+.form-small .control-label {padding-top: 6px; }
+.action-group {margin: 10px 0; }
+.addon-tweak {padding-left: 26px; font-size: 0.9em;line-height: 1em;}
+.non-right {border-right: none;}
+.non-left {border-left: none;}
+.suffix {font-size: 0.7em; float: right; padding-top: 3px; }

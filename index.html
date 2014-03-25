@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>HTML</title>
+</head>
+<body>
+	<div class="container">
+		<!-- top nav -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="logo" href="#"><img src="img/logo.png" alt="logo" width="94" height="45"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" >
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" class="link-normal">登出系统</a></li>
+						<li><a href="#" class="link-normal">修改密码</a></li>
+						<li><a href="#" class="link-normal">资料库</a></li>
+						<li><a href="#" class="link-normal">联系记录</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-xs-3">
+					<img src="img/brand.png" class="brand" alt="brand" width="120" height="120">
+					<p class="des">幼小衔接家庭课程专家</p>
+				</div>
+				<div class="col-xs-9 status">
+					<ul class="list-inline">
+						<li>当前日期: </li>
+						<li>分机: </li>
+						<li>坐席: </li>
+						<li>状态: </li>
+						<li>计时: </li>
+					</ul>
+					<ul class="list-inline">
+						<li>工号: </li>
+						<li>姓名: </li>
+						<li>所在组: </li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-xs-2 sidebar">
+				<ul class="nav nav-sidebar text-center">
+					<li class="active"><a href="#">客户信息</a></li>
+					<li><a href="#">客服管理</a></li>
+					<li><a href="#">财务管理</a></li>
+					<li><a href="#">代理商管理</a></li>
+					<li><a href="#">发货管理</a></li>
+					<li><a href="#">生产管理</a></li>
+					<li><a href="#">条法管理</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-10 main">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#" class="title">客户信息</a></li>
+				</ul>
+				<div class="action-group">
+					<a href="#" class="btn btn-default">新建客户</a>
+					<a href="#" class="btn btn-default">成交客户</a>
+				</div>
+				<form class="form form-horizontal form-small" role="form" method="get">
+					<div class="col-xs-6">
+						<fieldset>
+							<legend></legend>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-number">编号: </label>
+								<div class="col-xs-6">
+									<input type="text" name="number" class="form-control input-small" id="c-number">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-type">类型: </label>
+								<div class="col-xs-4">
+									<input type="text" name="type" class="form-control input-small" id="c-type">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-sex">性别: </label>
+								<div class="col-xs-4">
+									<input type="text" name="sex" class="form-control input-small" id="c-sex">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-birthday">出生年月: </label>
+								<div class="col-xs-5">
+									<input type="date" name="birthday" class="form-control input-small" id="c-birthday">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="cp-name">家长姓名:</label>
+								<div class="col-xs-5">
+									<input type="text" name="p-name" class="form-control input-small" id="cp-name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="cp-sex">家长性别: </label>
+								<div class="col-xs-4">
+									<input type="text" name="sex" class="form-control input-small" id="cp-sex">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-emal">E-mail: </label>
+								<div class="col-xs-6">
+									<input type="text" name="email" class="form-control input-small" id="c-emal">
+								</div>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend></legend>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">省/市/区: </label>
+								<div class="col-xs-9">
+									<div class="input-group">
+										<input type="text" name="provice" class="form-control input-small non-right">
+										<span class="input-group-addon">省</span>
+										<input type="text" name="city" class="form-control input-small non-right non-left">
+										<span class="input-group-addon">市</span>
+										<input type="text" name="area" class="form-control input-small non-left">
+										<span class="input-group-addon">区</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="cp-street">街道: </label>
+								<div class="col-xs-6">
+									<input type="text" name="street" class="form-control input-small" id="cp-street">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-addr">地址: </label>
+								<div class="col-xs-6">
+									<input type="text" name="address" class="form-control input-small" id="c-addr">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-post-code">邮编: </label>
+								<div class="col-xs-5">
+									<input type="text" name="postcode" class="form-control input-small" id="c-post-code">
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="col-xs-6">
+						<fieldset id="phone-box">
+							<legend></legend>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="phone-home">家庭电话: </label>
+
+								<div class="col-xs-9">
+									<div class="input-group">
+										<input type="text" name="phone-home" class="form-control input-small" id="phone-home">
+										<span class="input-group-addon radio addon-tweak">
+											<label><input type="radio" name="main-phone" value="home">主要电话</label>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="phone-company">公司电话: </label>
+								<div class="col-xs-9">
+									<div class="input-group">
+										<input type="text" name="phone-company" class="form-control input-small" id="phone-company">
+										<span class="input-group-addon radio addon-tweak">
+											<label><input type="radio" name="main-phone" value="company">主要电话</label>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="phone-mobile">手机电话: </label>
+								<div class="col-xs-9">
+									<div class="input-group">
+										<input type="text" name="phone-mobile" class="form-control input-small" id="phone-mobile">
+										<span class="input-group-addon radio addon-tweak">
+											<label><input type="radio" name="main-phone" value="personal">主要电话</label>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-tax">传真: </label>
+								<div class="col-xs-6">
+									<input type="text" class="form-control input-small" id="c-tax">
+								</div>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend></legend>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">订购产品:</label>
+								<div class="col-xs-9">
+									<div class="radio-inline">
+										<label><input type="radio" name="product-order" value="quarter">季度</label>
+									</div>
+									<div class="radio-inline">
+										<label><input type="radio" name="product-order" value="half-year">半年</label>
+									</div>
+									<div class="radio-inline">
+										<label><input type="radio" name="product-order" value="one-year">一年</label>
+									</div>
+									<div class="radio-inline">
+										<label><input type="radio" name="product-order" value="others">周边产品<span class="suffix">(一次性定单)</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">付款方式:</label>
+								<div class="col-xs-9">
+									<div class="radio-inline">
+										<label><input type="radio" name="pay-way" value="on-line">在线支付</label>
+									</div>
+									<div class="radio-inline">
+										<label><input type="radio" name="pay-way" value="on-delivery">货到付款</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-invoice">发票内容:</label>
+								<div class="col-xs-6">
+									<input type="text" name="invoice" class="form-control input-small" id="c-invoice">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label" for="c-comment">备注:</label>
+								<div class="col-xs-9">
+									<textarea name="comment" id="c-comment" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="from-group">
+								<div class="col-xs-10 col-xs-offset-2">
+									<input type="submit" class="btn btn-default" value="处理完成">
+									<input type="button" class="btn btn-default" value="未完成，提交上级">
+									<a href="#" class="btn btn-default">我的订单记录</a>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</form>
+
+				<div class="panel panel-default col-xs-offset-1">
+					<!-- Default panel contents -->
+					<div class="panel-heading">已发产品</div>
+					<ul class="list-group">
+						<li class="list-group-item">1月号</li>
+						<li class="list-group-item">2月号</li>
+					</ul>
+
+				</div>
+
+				<!-- panels -->
+				<div class="panel panel-default col-xs-offset-1">
+					<!-- Default panel contents -->
+					<div class="panel-heading">沟通记录</div>
+
+					<!-- Table -->
+					<table class="table">
+						<thead>
+							<tr>
+								<th>开始时间</th>
+								<th>结束时间</th>
+								<th>沟通内容</th>
+								<th>描述</th>
+								<th>客服编号</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>
+									<select class="form-control" name="subject" id="">
+										<option value="">option 1</option>
+										<option value="">option 2</option>
+										<option value="">option 3</option>
+									</select>
+								</td>
+								<td></td>
+								<td>001</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>
+									<select class="form-control" name="subject" id="">
+										<option value="">option 1</option>
+										<option value="">option 2</option>
+										<option value="">option 3</option>
+									</select>
+								</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
