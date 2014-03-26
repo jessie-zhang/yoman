@@ -6,7 +6,6 @@
 .container {width: 1170px; font: 1em/normal '微软雅黑', '宋体', Arial, Helvetica, sans-serif; }
 .nav-sidebar {border: 1px solid aliceblue; border-bottom: none;}
 .nav-sidebar > li > a {color: #333; }
-/*.nav-sidebar > .active > a, .nav-sidebar > li > a:hover {background-color: cadetblue; color: #fff; }*/
 .nav-sidebar > .active > a, .nav-sidebar > li > a:hover {background-color: #A52A2A; color: #fff; }
 
 /**
@@ -14,13 +13,19 @@
  * ----------------------------------------------------------------------------
  */
 
-.container .jumbotron {padding: 16px 0; background: url('../img/body-bg.png'); margin-top: 70px; color: black;}
+.container .jumbotron {padding: 14px 0; background: url('../img/body-bg.png'); margin-top: 10px; color: black;}
+.container .jumbotron {padding: 14px 0; background-color: transparent; margin-top: 10px; color: black;}
 .jumbotron p.des {font-size: 14px; text-align: center; padding-top: 6px; margin: 0 0 0 10px; }
-.logo {padding: 3px; display: block; }
+.logo {padding: 3px; display: block; float: left;}
 .brand {margin: 6px auto; display: block; }
-.status {padding-top: 50px; margin-left: -15px; }
-.status > ul {padding: 5px 0; }
-.status > ul > li {padding-right: 50px; }
+.info {position: relative; top: 16px; right: 50px;}
+.status-bar {float: left;margin: 9px 0;}
+.status-bar > ul { float: left; margin-left: 30px;}
+.status-bar > ul > li {padding-right: 30px; }
+
+.info > .navbar-nav {clear: left; margin: 20px 0 }
+.info > ul > li > a {color: #000; font-size: 19px; }
+.info > ul > li > a:hover {background-color: transparent; color: brown; font-size: 19px; }
 
 .main {border-left: solid 1px #ccc; }
 
@@ -30,7 +35,7 @@
  */
 
 .form {overflow: hidden; }
-.form-small .form-group {margin-bottom: 9px; }
+.form-small .form-group {margin: 0 -25px 9px -15px; }
 .action-group {margin: 20px 0;}
 .action-item {padding: 0 5px; color: #800000; font-size: 1.1em;}
 .action-item:hover {text-decoration: none; color: #5F9EA0}
